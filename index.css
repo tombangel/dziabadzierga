@@ -238,7 +238,8 @@ footer p:last-child {
   align-self: center;
   font-size: 1.5rem;
   padding-top: 200px;
-  height: 420px;
+  height: 400px;
+  outline: 10px solid white;
   width: 40px;
 }
 
