@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  background: #F5F5F5
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.main-socials-link .fab,
+.main-socials-link .fas {
+  font-size: 5rem;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  /* border-bottom: 1px solid black; */
+}
+
+*/ .container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  width: 145px;
+  height: 145px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.logo-link {
+  display: inherit;
+  width: inherit;
+  height: inherit;
+  color: black;
+  line-height: 30px;
+  text-decoration: none;
+  border: 10px solid white;
+  padding-top: 35px;
+}
+
+.main-about {
+  text-align: justify;
+}
+
+.main-about p {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0
+}
+
+.big-text {
+  display: flex;
+  justify-content: center;
+}
+
+.linki {
+  margin-top: 4rem;
+}
+
+.square-white::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: -48px;
+  margin-left: 10px;
+  background: white;
+}
+
+.square-black::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: -30px;
+  margin-left: 18px;
+  background: black;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.main-socials {
+  text-align: center;
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 4rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-socials-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  margin-bottom: 50px;
+  width: 175px;
+  height: 175px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.main-socials-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.main-socials-link p {
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.logo-link:hover,
+.main-socials-block:hover,
+.main-socials-link:hover {
+  filter: brightness(120%);
+}
+
+@media (min-width: 710px) {
+  .main-socials {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 709px) {
+  .main-socials-block {
+    width: 100%;
+  }
+}
+
+footer {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer p:first-child {
+  margin: 0;
+}
+
+footer p:last-child {
+  opacity: 0.5;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  height: 400px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.carousel_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel_track-container {
+  background: #F5F5F5;
+  outline: 10px solid white;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel_track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in
+}
+
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%
+}
+
+.carousel_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer
+}
+
+.carousel_button--left {
+  left: -25px;
+}
+
+.carousel_button--right {
+  right: -25px;
+}
+
+.carousel_button i {
+  font-size: 1.5rem;
+}
+
+.carousel_nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.carousel_indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, .3);
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.carousel_indicator.current-slide {
+  background: rgba(0, 0, 0, .75)
+}
+
+.is-hidden {
+  display: none
+}
