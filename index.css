@@ -53,6 +53,7 @@ body {
 
 .main-about {
   text-align: justify;
+  font-size: 1.25em;
 }
 
 .main-about p {
@@ -142,11 +143,21 @@ p {
   margin-top: 0;
 }
 
+
+@media(hover: hover) and (pointer: fine) {
+  .logo-link:hover,
+  .logo-link:active,
+  .main-socials-block:hover,
+  .main-socials-link:hover {
+    filter: brightness(120%);
+  }
+/* }
 .logo-link:hover,
+.logo-link:active,
 .main-socials-block:hover,
 .main-socials-link:hover {
   filter: brightness(120%);
-}
+} */
 
 footer {
   color: black;
@@ -215,15 +226,19 @@ footer p:last-child {
 }
 
 .carousel_button--left {
-  left: -35px;
+  left: -40px;
 }
 
 .carousel_button--right {
-  right: -35px;
+  right: -40px;
 }
 
 .carousel_button i {
+  align-self: center;
   font-size: 1.5rem;
+  padding-top: 200px;
+  height: 420px;
+  width: 40px;
 }
 
 .carousel_nav {
@@ -263,8 +278,35 @@ footer p:last-child {
   }
   .carousel_indicator {
     border: 0;
-    border-radius: 15px;
-    width: 30px;
-    height: 30px
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 20px;
+    height: 20px
+  }
+
+  /* .button-background-left{
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -10px;
+    background: white;
+    width: 40px;
+    height: 420px;
+    border: 10px solid white;
+  }
+
+  .button-background-right{
+    position: absolute;
+    margin-right: 5px;
+    background: white;
+    width: 40px;
+    height: 420px;
+    border: 10px solid white;
+  } */
+
+  .carousel_button i {
+    font-size: 2.5rem;
+    background: white;
   }
 }
