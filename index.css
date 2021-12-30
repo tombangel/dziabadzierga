@@ -51,6 +51,26 @@ body {
   padding-top: 35px;
 }
 
+.square-white::after {
+  content: '';
+  display: block;
+  width: (100% + 10px);
+  height: 40px;
+  margin-top: -50px;
+  margin-left: -10px;
+  background: white;
+}
+
+.square-black::after {
+  content: '';
+  display: block;
+  width: (100% + 10px);
+  height: 40px;
+  margin-top: -30px;
+  margin-right: -10px;
+  background: black;
+}
+
 .main-about {
   font-size: 1.25em;
   display: flex;
@@ -58,24 +78,10 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  margin-top: 2.5rem;
   text-align: center;
   padding: 0 15px;
 }
-
-/* .gabi_photo-img {
-  position: relative;
-  width: 40%;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 1rem;
-}
-
-.gabi_photo-container{
-  background: #F5F5F5;
-  outline: 10px solid white;
-  position: relative;
-  overflow: hidden;
-} */
 
 .gabi_photo-img{
   object-fit: cover;
@@ -116,26 +122,6 @@ h2 {
 
 .linki {
   margin-top: 4rem;
-}
-
-.square-white::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 40px;
-  margin-top: -48px;
-  margin-left: 10px;
-  background: white;
-}
-
-.square-black::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 40px;
-  margin-top: -30px;
-  margin-left: 18px;
-  background: black;
 }
 
 p {
@@ -222,6 +208,7 @@ footer p:last-child {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .carousel_track-container {
@@ -238,7 +225,7 @@ footer p:last-child {
   list-style: none;
   position: relative;
   height: 100%;
-  transition: transform 250ms ease-in
+  transition: transform 500ms ease-in;
 }
 
 .carousel_slide {
@@ -275,6 +262,7 @@ footer p:last-child {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  width: 100%;
 }
 
 .carousel_indicator {
@@ -283,7 +271,7 @@ footer p:last-child {
   justify-content: space-between;
   margin: 0 10px;
   border: 0;
-  width: 30%;
+  width: 20%;
   height: 10px;
   background: rgba(0, 0, 0, .3);
   cursor: pointer;
@@ -294,7 +282,8 @@ footer p:last-child {
 }
 
 .is-hidden {
-  display: none
+  display: none;
+    transition: transform 500ms ease-in;
 }
 
 @media (min-width: 710px) {
@@ -310,12 +299,7 @@ footer p:last-child {
 
   .main-about {
     flex-direction: column;
-  }
-
-  .gabi-photo-img{
-    /* max-height: 100%;
-    min-height: 350px;
-    width: 100%; */
+      margin-top: 1rem;
   }
 
   .main-about p {
@@ -345,15 +329,20 @@ footer p:last-child {
     margin-bottom: 0;
   }
 
-  .big-text::after {
-    display: none
+  .big-text {
+    line-height: 3.5rem;
+    margin-bottom: 1rem
   }
 
-  .square-black::after {
-    display: none
-  }
+    .big-text::after {
+      display: none
+    }
 
-  .square-white::after {
-    display: none
-  }
+    .square-black::after {
+      display: none
+    }
+
+    .square-white::after {
+      display: none
+    }
 }
