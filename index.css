@@ -52,31 +52,33 @@ body {
 }
 
 .main-about {
-  text-align: justify;
+  text-align: center;
   font-size: 1.25em;
 }
 
 .main-about p {
   width: 80%;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 15px
 }
 
 h2 {
+  width: 80%;
+  max-width: 800px;
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: 3px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  padding: 0
 }
 
 .big-text {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .linki {
@@ -183,7 +185,7 @@ footer p:last-child {
   height: 400px;
   padding: 0 15px;
   margin: 0 auto;
-  margin-top: 1.5rem;
+  margin-top: -1rem;
 }
 
 .carousel_image {
@@ -227,20 +229,16 @@ footer p:last-child {
 }
 
 .carousel_button--left {
-  left: -40px;
+  left: -30px;
 }
 
 .carousel_button--right {
-  right: -40px;
+  right: -30px;
 }
 
 .carousel_button i {
   align-self: center;
-  font-size: 1.5rem;
-  padding-top: 200px;
-  height: 400px;
-  outline: 10px solid white;
-  width: 40px;
+  font-size: 2.5rem;
 }
 
 .carousel_nav {
@@ -280,30 +278,35 @@ footer p:last-child {
     width: 100%;
   }
 
-  .carousel_indicator {
-    
+  .carousel {
+    margin-top: 0.5rem
   }
 
-  /* .button-background-left{
-    position: absolute;
-    margin-left: -50px;
-    margin-top: -10px;
-    background: white;
-    width: 40px;
-    height: 420px;
-    border: 10px solid white;
-  }
-
-  .button-background-right{
-    position: absolute;
-    margin-right: 5px;
-    background: white;
-    width: 40px;
-    height: 420px;
-    border: 10px solid white;
-  } */
   .carousel_button i {
-    font-size: 2.5rem;
-    background: white;
+    font-size: 4rem;
+  }
+
+  .carousel_button--left {
+    left: -45px;
+  }
+
+  .carousel_button--right {
+    right: -45px;
+  }
+
+  h2{
+    margin-bottom: 0;
+  }
+
+  .big-text::after {
+    display: none
+  }
+
+  .square-black::after {
+    display: none
+  }
+
+  .square-white::after {
+    display: none
   }
 }
