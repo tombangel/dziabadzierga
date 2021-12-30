@@ -20,9 +20,9 @@ body {
   /* border-bottom: 1px solid black; */
 }
 
-*/ .container {
-  width: 90%;
-  max-width: 900px;
+.container {
+  width: 80%;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -52,20 +52,53 @@ body {
 }
 
 .main-about {
-  text-align: center;
   font-size: 1.25em;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* .gabi_photo-img {
+  position: relative;
+  width: 40%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.gabi_photo-container{
+  background: #F5F5F5;
+  outline: 10px solid white;
+  position: relative;
+  overflow: hidden;
+} */
+
+.gabi_photo-img{
+  object-fit: cover;
+  object-position: center;
+  min-width: 0;
+  min-height: 0;
+  flex-basis: 250px;
+  width: 100%;
+  outline: 10px solid white;
 }
 
 .main-about p {
-  width: 80%;
-  max-width: 600px;
+  width: 60%;
   margin: 0 auto;
-  padding: 0 15px
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0 15px;
 }
 
 h2 {
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: 3px;
@@ -113,10 +146,8 @@ p {
 .main-socials {
   text-align: center;
   display: flex;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
   margin-top: 5rem;
   flex-direction: column;
   justify-content: space-between;
@@ -180,10 +211,9 @@ footer p:last-child {
 
 .carousel {
   position: relative;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
   height: 400px;
-  padding: 0 15px;
+  padding: 0 10px;
   margin: 0 auto;
   margin-top: -1rem;
 }
@@ -278,6 +308,23 @@ footer p:last-child {
     width: 100%;
   }
 
+  .main-about {
+    flex-direction: column;
+  }
+
+  .gabi-photo-img{
+    /* max-height: 100%;
+    min-height: 350px;
+    width: 100%; */
+  }
+
+  .main-about p {
+    margin-top: 1rem;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .carousel {
     margin-top: 0.5rem
   }
@@ -287,14 +334,14 @@ footer p:last-child {
   }
 
   .carousel_button--left {
-    left: -45px;
+    left: -50px;
   }
 
   .carousel_button--right {
-    right: -45px;
+    right: -50px;
   }
 
-  h2{
+  h2 {
     margin-bottom: 0;
   }
 
