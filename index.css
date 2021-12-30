@@ -84,23 +84,22 @@ body {
 }
 
 .gabi_photo-img{
-  object-fit: cover;
-  object-position: center;
   min-width: 0;
   min-height: 0;
-  flex-basis: 250px;
+  flex-basis: 225px;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
   outline: 10px solid white;
 }
 
 .main-about p {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 0 15px;
+  margin-left: 15px;
+  margin-right: auto;
 }
 
 h2 {
@@ -289,6 +288,10 @@ footer p:last-child {
 @media (min-width: 710px) {
   .main-socials {
     flex-direction: row;
+  }
+
+  .main-about p {
+      padding-left: 15px
   }
 }
 
