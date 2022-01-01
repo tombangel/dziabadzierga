@@ -153,6 +153,7 @@ p {
   color: black;
   font-weight: 700;
   font-size: 2rem;
+      margin-bottom: 1.5rem;
 }
 
 .socials-link-block {
@@ -301,7 +302,7 @@ footer p:last-child {
 }
 
 @media (max-width: 709px) {
-  .main-socials-block {
+  .socials-link-block {
     width: 100%;
   }
 
