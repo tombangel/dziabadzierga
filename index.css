@@ -11,8 +11,8 @@ body {
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.main-socials-link .fab,
-.main-socials-link .fas {
+.socials-link-block .fab,
+.socials-link-block .fas {
   font-size: 5rem;
   width: 100%;
   padding: 10px;
@@ -144,29 +144,33 @@ p {
   align-items: center;
   /* margin: 0 auto; */
   margin-bottom: 50px;
-  width: 175px;
-  height: 175px;
+
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.main-socials-link {
+.socials-link {
   text-decoration: none;
   color: black;
   font-weight: 700;
+  font-size: 2rem;
 }
 
-.main-socials-link p {
-  font-size: 2rem;
-  margin-bottom: 0;
-  margin-top: 0;
+.socials-link-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 175px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 @media(hover: hover) and (pointer: fine) {
 
   .logo-link:hover,
   .logo-link:active,
-  .main-socials-block:hover,
-  .main-socials-link:hover {
+  .socials-link:hover,
+  .socials-link:hover {
     filter: brightness(120%);
   }
 }
@@ -186,6 +190,7 @@ footer {
 
 footer p:first-child {
   margin: 0;
+    margin-top: 1.5rem;
 }
 
 footer p:last-child {
