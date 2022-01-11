@@ -306,6 +306,10 @@ footer p:last-child {
     width: 100%;
   }
 
+  .gabi_photo-img{
+    object-position: 0 -140px;
+  }
+
   .main-about {
     flex-direction: column;
       margin-top: 1rem;
