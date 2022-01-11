@@ -307,7 +307,7 @@ footer p:last-child {
   }
 
   .gabi_photo-img{
-    object-position: 0 -140px;
+    object-position: 0 -150px;
   }
 
   .main-about {
@@ -358,4 +358,10 @@ footer p:last-child {
     .square-white::after {
       display: none
     }
+}
+
+@media (max-width: 500px){
+  .gabi_photo-img{
+    object-position: 0 -110px;
+  }
 }
